@@ -100,10 +100,6 @@ where
                     }
                     Ok(Async::Ready(None)) | Ok(Async::NotReady) | Err(_) => break,
                 }
-                debug_assert!(
-                    n_polls.inc() < MAX_SYNC_POLLS,
-                    "Use Self::Context::notify() instead of direct use of address"
-                );
             }
 
             if not_ready {
