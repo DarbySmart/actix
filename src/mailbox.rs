@@ -8,7 +8,7 @@ use address::{channel, Addr, AddressReceiver, AddressSenderProducer};
 const MAX_SYNC_POLLS: u32 = 256;
 
 /// Default address channel capacity
-pub const DEFAULT_CAPACITY: usize = 16;
+pub const DEFAULT_CAPACITY: usize = 256;
 
 pub struct Mailbox<A>
 where
